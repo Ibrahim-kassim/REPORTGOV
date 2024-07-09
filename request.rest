@@ -1,0 +1,106 @@
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+  "username": "news",
+  "email": "news@example.com",
+  "password": "password123",
+  "gender": "male",
+  "dateOfBirth": {
+    "month": "January",
+    "day": 23,
+    "year": 2002
+  }
+}
+###
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "Admin@gmail.com",
+  "password": "password123"
+}
+###
+GET http://localhost:3000/api/user/allusers
+Content-Type: application/json
+###
+POST  http://localhost:3000/api/report/create-Report
+Content-Type: application/json
+
+{
+  "user": "6684551aa69847e4f670a236",
+  "issueTitle": "change lamp2",
+  "priority": "medium2",
+  "location": "beirut",
+  "description": "you must change lamp 2",
+  "image": "http://example/lamp2.net"
+}
+
+###
+GET http://localhost:3000/api/report/getAllReports
+Content-Type: application/json
+###
+GET http://localhost:3000/api/user/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhMzEwYzA3ZjA3ODM4MmZhYyIsImlhdCI6MTcyMDUzNTE5MCwiZXhwIjoxNzIzMTI3MTkwfQ.zLvTJ7zwffPsA98mEguhvDeyL7DAEP-XCI6wF5pfU_g
+###
+PUT http://localhost:3000/api/user/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhMzEwYzA3ZjA3ODM4MmZhYyIsImlhdCI6MTcyMDUzNTE5MCwiZXhwIjoxNzIzMTI3MTkwfQ.zLvTJ7zwffPsA98mEguhvDeyL7DAEP-XCI6wF5pfU_g
+
+{
+  "username": "aliadmin",
+  "email": "admin@admin.com",
+  "gender": "male",
+  "isAdmin" :true,
+  "dateOfBirth": {
+    "month": "January",
+    "day": 1,
+    "year": 1990
+  }
+}
+
+###
+POST  http://localhost:3000/api/news/addNews
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQ1MTBjOGZlOWNlNWZjZjlkZDQyMiIsImlhdCI6MTcyMDUzNzY3MSwiZXhwIjoxNzIzMTI5NjcxfQ.yA7MOFgmCBP4JVr7csNHCB0YxlvIFZUrR-JdA_2alPU
+
+{
+  "title": "New News Title 3",
+  "tag": "Technology whatever 3",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "image": "https://example.com/news-image.jpg"
+}
+
+
+###
+DELETE http://localhost:3000/api/news/deleteNews/668d55f3229cb71b906163ec
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQ1MTBjOGZlOWNlNWZjZjlkZDQyMiIsImlhdCI6MTcyMDUzNzY3MSwiZXhwIjoxNzIzMTI5NjcxfQ.yA7MOFgmCBP4JVr7csNHCB0YxlvIFZUrR-JdA_2alPU
+
+
+###
+
+GET http://localhost:3000/api/news/getAllNews
+Content-Type: application/json
+
+
+
+
+###
+
+POST http://localhost:3000/api/user/createNewAddAdmin
+Content-Type: application/json
+
+{
+  "username": "Admin",
+  "email": "Admin@gmail.com",
+  "password": "password123",
+  "isAdmin":true,
+  "gender": "male",
+  "dateOfBirth": {
+    "month": "January",
+    "day": 23,
+    "year": 2002
+  }
+}
