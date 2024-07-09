@@ -6,7 +6,7 @@ const { generateToken } = require("../config/generateToken");
 
 
 const registerUser = asyncHandler(async (req, res) => {
-    const { username, email, password,gender,dateOfBirth } = req.body;
+    const { username, email, password,gender,dateOfBirth, phoneNumber } = req.body;
   
     if (!username || !email || !password) {
       res.status(400).json({ message: "Please enter all the fields" });
@@ -19,11 +19,12 @@ const registerUser = asyncHandler(async (req, res) => {
       return;
     }
   
-    const user = await User.create({ username, email, password,gender,dateOfBirth });
+    const user = await User.create({ username, email, password,gender,dateOfBirth,phoneNumber  });
     if (user) {
       res.status(201).json({
         _id: user._id,
         username: user.username,
+        phoneNumber : user.phoneNumber,
         email: user.email,
         gender:user.gender,
         dateOfBirth:user.dateOfBirth,

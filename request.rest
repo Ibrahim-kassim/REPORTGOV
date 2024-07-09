@@ -1,9 +1,10 @@
-POST http://localhost:3000/api/user/register
+POST http://localhost:4000/api/user/register
 Content-Type: application/json
 
 {
-  "username": "news",
-  "email": "news@example.com",
+  "username": "newsssssds2",
+  "email": "newsss33asd24@example.com",
+  "phoneNumber": "7686760017",
   "password": "password123",
   "gender": "male",
   "dateOfBirth": {
@@ -13,7 +14,7 @@ Content-Type: application/json
   }
 }
 ###
-POST http://localhost:3000/api/user/login
+POST http://localhost:4000/api/user/login
 Content-Type: application/json
 
 {
@@ -21,30 +22,30 @@ Content-Type: application/json
   "password": "password123"
 }
 ###
-GET http://localhost:3000/api/user/allusers
+GET http://localhost:4000/api/user/allusers
 Content-Type: application/json
 ###
-POST  http://localhost:3000/api/report/create-Report
+POST  http://localhost:4000/api/report/create-Report
 Content-Type: application/json
 
 {
   "user": "6684551aa69847e4f670a236",
-  "issueTitle": "change lamp2",
-  "priority": "medium2",
-  "location": "beirut",
+  "issueTitle": "changekygug lamp2",
+  "priority": "medium2kjhkj",
+  "location": "beirutlj",
   "description": "you must change lamp 2",
   "image": "http://example/lamp2.net"
 }
 
 ###
-GET http://localhost:3000/api/report/getAllReports
+GET http://localhost:4000/api/report/getAllReports
 Content-Type: application/json
 ###
-GET http://localhost:3000/api/user/profile
+GET http://localhost:4000/api/user/profile
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhMzEwYzA3ZjA3ODM4MmZhYyIsImlhdCI6MTcyMDUzNTE5MCwiZXhwIjoxNzIzMTI3MTkwfQ.zLvTJ7zwffPsA98mEguhvDeyL7DAEP-XCI6wF5pfU_g
 ###
-PUT http://localhost:3000/api/user/profile
+PUT http://localhost:4000/api/user/profile
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhMzEwYzA3ZjA3ODM4MmZhYyIsImlhdCI6MTcyMDUzNTE5MCwiZXhwIjoxNzIzMTI3MTkwfQ.zLvTJ7zwffPsA98mEguhvDeyL7DAEP-XCI6wF5pfU_g
 
@@ -61,7 +62,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhM
 }
 
 ###
-POST  http://localhost:3000/api/news/addNews
+POST  http://localhost:4000/api/news/addNews
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQ1MTBjOGZlOWNlNWZjZjlkZDQyMiIsImlhdCI6MTcyMDUzNzY3MSwiZXhwIjoxNzIzMTI5NjcxfQ.yA7MOFgmCBP4JVr7csNHCB0YxlvIFZUrR-JdA_2alPU
 
@@ -74,14 +75,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQ1MTBjO
 
 
 ###
-DELETE http://localhost:3000/api/news/deleteNews/668d55f3229cb71b906163ec
+DELETE http://localhost:4000/api/news/deleteNews/668d55f3229cb71b906163ec
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGQ1MTBjOGZlOWNlNWZjZjlkZDQyMiIsImlhdCI6MTcyMDUzNzY3MSwiZXhwIjoxNzIzMTI5NjcxfQ.yA7MOFgmCBP4JVr7csNHCB0YxlvIFZUrR-JdA_2alPU
 
 
 ###
 
-GET http://localhost:3000/api/news/getAllNews
+GET http://localhost:4000/api/news/getAllNews
 Content-Type: application/json
 
 
@@ -89,7 +90,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/user/createNewAddAdmin
+POST http://localhost:4000/api/user/createNewAddAdmin
 Content-Type: application/json
 
 {
