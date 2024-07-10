@@ -71,13 +71,19 @@ const authUser = asyncHandler(async (req, res) => {
   })
     
   const getUserById = asyncHandler(async (req, res) => {
-    const user = await User.findById(req.user._id).select("-password");
-    if (user) {
+    console.log("Request User:", req.user);
+    if (req.user) {
+      const user = await User.findById(req.user._id).select("-password");
+      if (user) {
         res.json(user);
-    } else {
+      } else {
         res.status(404).json({ message: "User not found" });
+      }
+    } else {
+      res.status(404).json({ message: "User not authenticated" });
     }
-});
+  });
+  
 const updateUser = asyncHandler(async (req, res) => {
   const { username, email, gender, dateOfBirth, isAdmin } = req.body;
 

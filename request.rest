@@ -43,7 +43,7 @@ Content-Type: application/json
 ###
 GET http://localhost:4000/api/user/profile
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ODQ1NjBhMzEwYzA3ZjA3ODM4MmZhYyIsImlhdCI6MTcyMDUzNTE5MCwiZXhwIjoxNzIzMTI3MTkwfQ.zLvTJ7zwffPsA98mEguhvDeyL7DAEP-XCI6wF5pfU_g
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGRjNjdlYTlhYThlM2E0NDI2MDc1MiIsImlhdCI6MTcyMDU2NzQzMywiZXhwIjoxNzIzMTU5NDMzfQ.oFfP6O1GuGI_nE15940T1rQ42F1xsjNcXA0xAXA_7CQ
 ###
 PUT http://localhost:4000/api/user/profile
 Content-Type: application/json
